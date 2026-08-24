@@ -420,7 +420,7 @@
   .write-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:28px;
+    gap:32px;
   }
 
   .write-group-intro{
@@ -463,19 +463,29 @@
   }
 
   .write-body{
-    padding:22px 24px 24px;
+    padding:28px 28px 32px;
     display:flex;
     flex-direction:column;
     flex:1;
   }
 
+  .write-num{
+    font-family:'Anton', sans-serif;
+    font-weight:400;
+    font-size:1.6rem;
+    color:var(--blue);
+    opacity:0.9;
+    margin-bottom:8px;
+    display:block;
+  }
+
   .write-tag{
     font-family:'IBM Plex Mono', monospace;
     font-size:0.7rem;
-    letter-spacing:0.08em;
+    letter-spacing:0.1em;
     text-transform:uppercase;
-    color:var(--coral, #C1502E);
-    margin-bottom:10px;
+    color:var(--blue);
+    margin-bottom:14px;
     display:block;
   }
 
@@ -484,22 +494,18 @@
     font-weight:400;
     text-transform:none;
     letter-spacing:0;
-    font-size:1.25rem;
-    line-height:1.2;
+    font-size:clamp(1.3rem, 2.4vw, 1.7rem);
+    line-height:1.15;
     color:var(--ink);
-    margin-bottom:12px;
+    margin-bottom:16px;
   }
 
   .write-desc{
-    font-size:0.92rem;
-    color:var(--ink);
-    margin-bottom:20px;
+    font-size:0.95rem;
+    line-height:1.6;
+    color:rgba(20,21,26,0.82);
+    margin-bottom:22px;
     flex:1;
-  }
-
-  .write-desc.placeholder{
-    font-style:italic;
-    color:#9A968A;
   }
 
   .write-btn{
@@ -512,8 +518,8 @@
     font-family:'IBM Plex Mono', monospace;
     font-size:0.78rem;
     letter-spacing:0.03em;
-    padding:9px 16px;
-    border-radius:2px;
+    padding:10px 20px;
+    border-radius:100px;
     align-self:flex-start;
     transition:background 0.15s ease;
   }
@@ -779,9 +785,10 @@
         <div class="write-card">
           <img class="write-thumb" src="assets/congress-infographic.png" alt="Democracy Under Siege infographic thumbnail">
           <div class="write-body">
+            <span class="write-num display">01</span>
             <span class="write-tag mono">Infographic · Congressional Brief</span>
             <h3 class="write-title">Democracy Under Siege: Economic Insecurity &amp; the Far-Right Ballot</h3>
-            <p class="write-desc placeholder">This infographic was designed for Congressional advisors: the research was framed around the need for legislative action to boost employment and prevent extremist, anti-democratic activity.</p>
+            <p class="write-desc">This infographic was designed for Congressional advisors: the research was framed around the need for legislative action to boost employment and prevent extremist, anti-democratic activity.</p>
             <a class="write-btn" href="assets/congress-infographic.png" target="_blank" rel="noopener">View infographic <span class="arrow">↗</span></a>
           </div>
         </div>
@@ -789,9 +796,10 @@
         <div class="write-card">
           <img class="write-thumb" src="assets/fed-infographic.png" alt="Monetary Policy in a Polarized Country infographic thumbnail">
           <div class="write-body">
+            <span class="write-num display">02</span>
             <span class="write-tag mono">Infographic · Fed Analyst Brief</span>
             <h3 class="write-title">Monetary Policy in a Polarized Country: Financial Distress &amp; Far-Right Extremism</h3>
-            <p class="write-desc placeholder">This infographic was tailored for analysts at the FED: I connected data on major financial crises to policy concerns, offering ways for the FED to better address these issues. </p>
+            <p class="write-desc">This infographic was tailored for analysts at the FED: I connected data on major financial crises to policy concerns, offering ways for the FED to better address these issues. </p>
             <a class="write-btn" href="assets/fed-infographic.png" target="_blank" rel="noopener">View infographic <span class="arrow">↗</span></a>
           </div>
         </div>
@@ -799,9 +807,10 @@
         <div class="write-card">
           <img class="write-thumb" src="assets/economic-crisis-thumb.png" alt="Economic Crisis and the Rise of Far-Right Extremism paper thumbnail">
           <div class="write-body">
+            <span class="write-num display">03</span>
             <span class="write-tag mono">Research Paper · ENGL394</span>
             <h3 class="write-title">From the Great Depression to the Great Recession: Economic Crisis and the Rise of Far-Right Extremism</h3>
-            <p class="write-desc placeholder">I conduced research examining the relationship between economic downturns and the growth of political extremism, particularly far-right extremism as seen primarily in the West. This is a research review article I wrote, synthesizing the findings of political scientists, historians, and professors from various global institutions into a brief, yet nuanced, analysis of the issue.</p>
+            <p class="write-desc">I conduced research examining the relationship between economic downturns and the growth of political extremism, particularly far-right extremism as seen primarily in the West. This is a research review article I wrote, synthesizing the findings of political scientists, historians, and professors from various global institutions into a brief, yet nuanced, analysis of the issue.</p>
             <a class="write-btn" href="assets/economic-crisis-paper.pdf" target="_blank" rel="noopener">View PDF <span class="arrow">↗</span></a>
           </div>
         </div>
@@ -809,9 +818,10 @@
         <div class="write-card">
           <img class="write-thumb" src="assets/housing-crisis-thumb.png" alt="The U.S. Housing Crisis presentation thumbnail">
           <div class="write-body">
+            <span class="write-num display">04</span>
             <span class="write-tag mono">Presentation · Call to Action</span>
             <h3 class="write-title">The U.S. Housing Crisis: Ending Single-Family Zoning</h3>
-            <p class="write-desc placeholder">Analyzing academic research and data on the U.S housing market, I describe one of the largest contibuters to the housing crisis, single-family zoning, and review the various reforms and solutions that ordinary individuals, as well as our state, local, and federal governments, can implement to address the issue. I strongly believe everyone deserves housing and that policy reforms are needed to increase equity and affordability. This presentation was created using Canva and showcases my ability to present dense, important information in an engaging, convincing way; an accessible call to action.</p>
+            <p class="write-desc">Analyzing academic research and data on the U.S housing market, I describe one of the largest contibuters to the housing crisis, single-family zoning, and review the various reforms and solutions that ordinary individuals, as well as our state, local, and federal governments, can implement to address the issue. I strongly believe everyone deserves housing and that policy reforms are needed to increase equity and affordability. This presentation was created using Canva and showcases my ability to present dense, important information in an engaging, convincing way; an accessible call to action.</p>
             <a class="write-btn" href="assets/housing-crisis-presentation.pdf" target="_blank" rel="noopener">View PDF <span class="arrow">↗</span></a>
           </div>
         </div>
@@ -819,9 +829,10 @@
         <div class="write-card wide">
           <img class="write-thumb" src="assets/religion-thumb.png" alt="What Is Religion essay thumbnail">
           <div class="write-body">
+            <span class="write-num display">05</span>
             <span class="write-tag mono">Essay · RELS271</span>
             <h3 class="write-title">What Is Religion?</h3>
-            <p class="write-desc placeholder">This is an exerpt from a paper I wrote for my religious studies class, in which I attempt to define relgion as a universal phenomenon based on five primary components using the "family-resemblance" approach. I constructed my own definition of religion after engaging with a variety of religious scholarly writings, theories, and frameworks. The full essay applies my definition to Buddhism, Hinduism, and Islam, also examines Judaism, and explores the idea of religious institutions as systems of power.  I find religion to be one of the most interesting human phenomena and am always eager to learn more about it. This piece combines my own subjective experiences and preconceptions of religion with perspectives from various religious scholars. The included excerpt features the more reflective, slightly more personal side of my writing. It underscores the critical thinking involved in taking an entire semester's worth of content: throughout the course and the span of this assignment, I analyzed vastly different types and approaches to religion, from which I collected, compared, and contrasted the details provided by each author.</p>
+            <p class="write-desc">This is an exerpt from a paper I wrote for my religious studies class, in which I attempt to define relgion as a universal phenomenon based on five primary components using the "family-resemblance" approach. I constructed my own definition of religion after engaging with a variety of religious scholarly writings, theories, and frameworks. The full essay applies my definition to Buddhism, Hinduism, and Islam, also examines Judaism, and explores the idea of religious institutions as systems of power.  I find religion to be one of the most interesting human phenomena and am always eager to learn more about it. This piece combines my own subjective experiences and preconceptions of religion with perspectives from various religious scholars. The included excerpt features the more reflective, slightly more personal side of my writing. It underscores the critical thinking involved in taking an entire semester's worth of content: throughout the course and the span of this assignment, I analyzed vastly different types and approaches to religion, from which I collected, compared, and contrasted the details provided by each author.</p>
 
             <div class="essay-excerpt">
               <span class="excerpt-label mono">Excerpt from "What is Religion?"</span>
