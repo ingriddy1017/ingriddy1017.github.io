@@ -223,8 +223,34 @@
     display:block;
   }
 
+  .about-top{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    align-items:center;
+    gap:40px;
+  }
+
+  .about-portrait{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:1px solid var(--line);
+  }
+
   .about-heading{
     text-align:right;
+  }
+
+  @media (max-width:700px){
+    .about-top{
+      grid-template-columns:1fr;
+      justify-items:center;
+      text-align:center;
+    }
+    .about-heading{
+      text-align:center;
+    }
   }
 
   .about-heading .solid{
@@ -265,6 +291,29 @@
 
   .about-cta{
     margin-top:56px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+  }
+
+  .about-contact{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 22px;
+    font-size:0.78rem;
+    letter-spacing:0.03em;
+    color:var(--ink);
+  }
+
+  .about-contact a{
+    border-bottom:1px solid transparent;
+    transition:border-color 0.15s ease;
+  }
+
+  .about-contact a:hover{
+    border-color:var(--ink);
   }
 
   .ghost-wide{
@@ -415,6 +464,13 @@
     font-size:0.75rem;
     letter-spacing:0.08em;
     color:var(--ink-soft, #5B6B7A);
+  }
+
+  .writing-desc{
+    font-size:0.98rem;
+    color:var(--ink);
+    max-width:64ch;
+    margin-bottom:36px;
   }
 
   .write-grid{
@@ -648,7 +704,7 @@
       <h1 class="hero-name display">Ingrid Yang</h1>
       <div class="hero-copy">
         <span class="eyebrow mono">Economics, Data &amp; Policy</span>
-        <p>Research, writing, and data pipelines on the economics behind housing, extremism, and public policy.</p>
+        <p>Research, writing, and data analyses on the economics behind housing, politics, and public policy. Other fun stuff too! </p>
       </div>
     </div>
 
@@ -663,30 +719,36 @@
     <div class="about-inner">
       <span class="eyebrow-label mono">About</span>
 
-      <div class="about-heading">
-        <span class="solid display">Economics, math, and data</span>
-        <span class="solid display">in service of real questions</span>
-        <span class="ghost display">and real research</span>
+      <div class="about-top">
+        <img class="about-portrait" src="assets/linkedingrid.jpeg" alt="Portrait of Ingrid Yang">
+        <div class="about-heading">
+          <span class="solid display">Curiosity, creativity, openness</span>
+          <span class="solid display"> wanting to ask real questions</span>
+          <span class="ghost display">seeking real answers</span>
+        </div>
       </div>
 
       <div class="about-body">
         <p>
           I'm a student at the <strong>University of Maryland</strong> studying economics, mathematics, and data science.
-          My interests range from socioeconomic issues and public policy to finance and business — I like the questions
-          that don't have a clean textbook answer yet.
+          My interests range from socioeconomic issues and public policy to the arts and humanities, along with the business in between.
         </p>
         <p>
-          Outside the notebook, I build things: county-level housing models, listening-pattern pipelines, and a handful
-          of side projects driven by <strong>music</strong> and plain curiosity.
-        </p>
-        <p class="about-thesis">
-          I'm passionate about policy and its intersection with economics and politics, and think being able to
-          adapt content for different audiences is a very important form of communication.
+          I love to create and build things: county-level housing models, listening-pattern pipelines, and a handful
+          of side projects driven by <strong>music</strong> and genuine curiosity. In my free time, I enjoy listening
+          to, playing (guitar, piano, and bass), and producing music, going to concerts, and keeping active through 
+          tennis and hiking. 
         </p>
       </div>
 
       <div class="about-cta">
         <a href="#projects" class="circle-btn on-cream display" style="text-transform:none; font-family:'Encode Sans',sans-serif;">view projects</a>
+
+        <div class="about-contact mono">
+          <a href="tel:+13016937599">+1 301-693-7599</a>
+          <a href="mailto:ingridyang123@gmail.com">ingridyang123@gmail.com</a>
+          <a href="https://www.linkedin.com/in/ingrid-yang-267b9222b/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
       </div>
     </div>
 
@@ -774,6 +836,11 @@
         <h2 class="display">Writing &amp; Research</h2>
         <span class="writing-count mono">5 entries</span>
       </div>
+
+      <p class="writing-desc">
+        I'm passionate about policy and its intersection with economics and politics, and think being able to
+        adapt content for different audiences is a very important form of communication.
+      </p>
 
       <div class="write-grid">
 
